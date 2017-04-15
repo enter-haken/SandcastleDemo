@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,11 +49,30 @@
     <Compile Include="Base\Document.cs" />
     <Compile Include="Base\IPrintable.cs" />
     <Compile Include="Base\NamespaceDoc.cs" />
+    <Compile Include="Generic\DAL\FileSystemStorage\ArticleAccess.cs" />
+    <Compile Include="Generic\DAL\FileSystemStorage\Crud.cs" />
+    <Compile Include="Generic\DAL\FileSystemStorage\CustomerAccess.cs" />
+    <Compile Include="Generic\DAL\FileSystemStorage\ICollectionExtension.cs" />
+    <Compile Include="Generic\DAL\FileSystemStorage\NamespaceDoc.cs" />
+    <Compile Include="Generic\DAL\FileSystemStorage\OrderAccess.cs" />
+    <Compile Include="Generic\DAL\ICreateReadUpdateDelete.cs" />
+    <Compile Include="Generic\DAL\NamespaceDoc.cs" />
+    <Compile Include="Generic\NamespaceDoc.cs" />
+    <Compile Include="Generic\POCO\Article.cs" />
+    <Compile Include="Generic\POCO\Customer.cs" />
+    <Compile Include="Generic\POCO\NamespaceDoc.cs" />
+    <Compile Include="Generic\POCO\Order.cs" />
+    <Compile Include="Generic\POCO\OrderItem.cs" />
+    <Compile Include="Generic\POCO\PocoBase.cs" />
+    <Compile Include="Generic\POCO\Person.cs" />
+    <Compile Include="Generic\POCO\PocoBaseEqualityComparer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
