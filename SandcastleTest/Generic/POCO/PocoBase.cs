@@ -34,7 +34,7 @@ namespace SandcastleTest.Generic.POCO
         /// <summary>
         /// Gets a hascode for a <see cref="PocoBase"/>
         /// </summary>
-        /// <returns> a hascode for a <see cref="PocoBase"/></returns>
+        /// <returns> a hashcode for a <see cref="PocoBase"/></returns>
         public override int GetHashCode()
         {
             return Id.GetHashCode();
