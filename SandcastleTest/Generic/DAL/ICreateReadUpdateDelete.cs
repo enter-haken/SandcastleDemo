@@ -7,13 +7,13 @@ namespace SandcastleTest.Generic.DAL
     /// <summary>
     /// A base interface for al CRUD operations
     /// </summary>
-    /// <typeparam name="T"><inheritdoc cref="PocoBase" select="/summary/node()"/></typeparam>
+    /// <typeparam name="T"><inheritdoc cref="PocoBase" select="summary"/></typeparam>
     public interface ICreateReadUpdateDelete<T> where T : PocoBase
     {
         /// <summary>
         /// Create a new <paramref name="entity"/>
         /// </summary>
-        /// <param name="entity"><inheritdoc cref="PocoBase" select="/summary/node()"/></param>
+        /// <param name="entity"><inheritdoc cref="PocoBase" select="summary"/></param>
         void Create(T entity);
 
         /// <summary>
@@ -32,14 +32,14 @@ namespace SandcastleTest.Generic.DAL
         /// <summary>
         /// Update an entity of <typeparamref name="T"/>
         /// </summary>
-        /// <param name="entity"><inheritdoc cref="PocoBase" select="/summary/node()" /></param>
+        /// <param name="entity"><inheritdoc cref="PocoBase" select="summary"/></param>
         /// <returns>if the update succeeded, this method returns true, otherwise false.</returns>
         bool Update(T entity);
 
         /// <summary>
         /// Deletes an entity of  <typeparamref name="T"/>
         /// </summary>
-        /// <param name="entity"><inheritdoc cref="PocoBase" select="/summary/node()" /></param>
+        /// <param name="entity"><inheritdoc cref="PocoBase" select="summary"/></param>
         /// <returns>if the deletion succeeded, this method returns true, otherwise false.</returns>
         bool Delete(T entity);
     }
