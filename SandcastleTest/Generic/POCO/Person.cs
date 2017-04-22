@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SandcastleTest.Generic.POCO
+﻿namespace SandcastleTest.Generic.POCO
 {
     /// <summary>
     /// A base class with base properties for a person.

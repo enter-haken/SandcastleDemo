@@ -1,4 +1,5 @@
 ﻿using SandcastleTest.Generic.POCO;
+
 using System;
 using System.Collections.Generic;
 
@@ -25,7 +26,6 @@ namespace SandcastleTest.Generic.DAL
         /// <summary>
         /// Get an entity by <see cref="PocoBase.Id"/>
         /// </summary>
-        /// <param name="id">The see <see cref="PocoBase.Id"/> of the entity.</param>
         /// <returns>an entity of type <typeparamref name="T"/></returns>
         T GetEntity(Guid id);
 
